@@ -1,0 +1,196 @@
+/*############ pour designe des produit ############################*/
+
+#imagewhat {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    opacity: 0.7;
+    position: fixed;
+    bottom: 10px;
+    z-index: 999;
+}
+
+
+/* produit */
+
+.img-3 {
+    width: 100%;
+    height: 90vh;
+}
+
+.img-31,
+.img-32,
+.img-33,
+.img-34,
+.img-34 {
+    width: 50%;
+}
+
+.img-32,
+.img-34 {
+    padding-left: 50%;
+    margin-top: -50%;
+}
+
+#second {
+    width: 40%;
+    margin-left: 60%;
+    margin-top: -40%;
+}
+
+.para1 {
+    padding-top: 15%;
+}
+
+.para3,
+.para1 {
+    font-family: Calibri;
+}
+
+.para2 {
+    padding-top: 15%;
+    padding-left: 40px;
+    color: rgb(150, 41, 41);
+    font-family: Lucida Sans;
+}
+
+.btnproduit {
+    margin-left: 40%;
+    color: #fff;
+    background-color: #000;
+    border: 0px solid #000;
+    width: 250px;
+    height: 40px;
+}
+
+.btnproduit:hover {
+    border-radius: 30px;
+}
+
+
+/*############### puor designe des termes #####################*/
+
+.title4 {
+    color: blueviolet;
+    padding-left: 40%;
+}
+
+.parag {
+    font-size: 18px;
+    padding-left: 5%;
+}
+
+.under-title {
+    color: rgb(126, 33, 33);
+    text-decoration: underline;
+}
+
+
+/*################### designe de partie d'achat ###########*/
+
+
+/*
+#achat {
+    width: 45%;
+    height: 80vh;
+    border: 1px solid black;
+    margin-left: 25%;
+    box-shadow: 10px 5px 5px #d3d3d3;
+}
+
+*/
+
+.se {
+    width: 1;
+    opacity: 0;
+}
+
+.error {
+    color: red;
+    margin-left: 37%;
+    border: solid;
+    width: 350px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    padding-left: 42%;
+    padding-top: 30px;
+}
+
+span {
+    position: relative;
+    top: -17px;
+    left: 20px;
+    color: brown;
+    font-size: 18px;
+}
+
+.name,
+.numerotele,
+.city,
+.adr {
+    width: 350px;
+    height: 30px;
+    border: 0.5px solid black;
+    text-align: center;
+    margin-left: 37%;
+    margin-top: 5%;
+}
+
+.numerotele,
+.city,
+.adr {
+    margin-top: 3%;
+}
+
+.cdrnombre {
+    width: 180px;
+    height: 30px;
+    margin-left: 43%;
+    margin-top: 3%;
+}
+
+#moin,
+#plus {
+    width: 45px;
+    height: 30px;
+    border: 1px solid black;
+    color: #fff;
+    background-color: #000;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+#moin {
+    margin-left: 8%;
+    margin-top: 0%;
+}
+
+#plus {
+    margin-left: 60%;
+    margin-top: -30%;
+}
+
+#nbr {
+    margin-left: 40%;
+    width: 15px;
+    position: relative;
+    top: -25px;
+    text-align: center;
+}
+
+.btnachat {
+    color: #fff;
+    background-color: #000;
+    border: solid black;
+    width: 250px;
+    height: 30px;
+    margin-left: 40%;
+}

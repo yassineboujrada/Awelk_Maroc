@@ -1,0 +1,19 @@
+{% extends "gene.html" %}
+{% block content %}<br><br><br><br>
+<link rel="stylesheet" href="{{url_for('static',filename='/designe/admin.css')}}"><br><br>
+    <div class ="login_body">
+    <form action="" method="POST" id="forget_form">
+        <br><br>
+        <p class="info_mail">Saisez votre code de vérification</p><br><br><br>
+        <input type="text" name="check_number" placeholder="Code de vérification" class="user_ad" required><br><br>
+        {% with messages = get_flashed_messages(category_filter=["al"]) %}
+            {% if messages %}
+                {% for msg in messages %}
+                    <p class='eror'>{{ msg }}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}<br>
+        <Button type="submit" class="btn_pass">Submit</button><br><br>
+    </form>
+    </div>
+{% endblock content %}

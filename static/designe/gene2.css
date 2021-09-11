@@ -1,0 +1,250 @@
+/*########################### Designe pour partie de produit #####################*/
+
+.flashes {
+    color: green;
+    padding-left: 40%;
+    font-family: 25px;
+    visibility: visible;
+    animation: move 5s;
+    -webkit-animation: move 5s infinite;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#no_found {
+    padding-left: 67%;
+    margin-top: -2%;
+    color: #000;
+    visibility: visible;
+    animation: move 15s;
+    -webkit-animation: move 15s infinite;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes move
+/* Safari and Chrome */
+
+{
+    0% {
+        opacity: 1;
+    }
+    15% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    75% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#titlepro {
+    padding-left: 35%;
+    width: 150px;
+    font-size: 22px;
+    background: #c31432;
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);
+    background: linear-gradient(to right, #240b36, #c31432);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+#search {
+    border-radius: 30px;
+    border: 2px solid black;
+    height: 25px;
+    margin-left: 65%;
+    width: 200px;
+    position: relative;
+    top: -7vh;
+    padding-left: 10px;
+}
+
+#btnsearch {
+    border-radius: 30px;
+    border: 2px solid #4A00E0;
+    background-color: #4A00E0;
+    color: #fff;
+    height: 25px;
+    position: relative;
+    top: -7vh;
+}
+
+#selectprod {
+    display: block;
+    height: 450px;
+    width: 98%;
+}
+
+#pro1 {
+    width: 20%;
+    height: 410px;
+    margin-left: 4%;
+    margin-top: 2%;
+    display: block;
+}
+
+.imgpro {
+    width: 200px;
+    height: 260px;
+    margin-top: 5%;
+    margin-left: 10%;
+    display: block;
+}
+
+.textpro {
+    margin-top: -112%;
+    height: 410px;
+    opacity: 0;
+    display: block;
+}
+
+.textpro:hover {
+    box-shadow: 10px 5px 5px #d3d3d3;
+}
+
+.imgprod {
+    width: 200px;
+    height: 260px;
+}
+
+.infopro {
+    font-family: Georgia;
+    text-align: center;
+    padding-top: 110%;
+}
+
+.prixpro {
+    text-align: center;
+}
+
+.btnpro {
+    border-radius: 20px;
+    margin-left: 60px;
+    width: 50%;
+    height: 8%;
+    color: white;
+    border: 0px solid;
+    background-color: black;
+}
+
+
+/*############################## designe pour paritie contactez nous #######################3*/
+
+.title3 {
+    padding-top: 90px;
+    padding-left: 40%;
+    color: #6110a8;
+    font-family: Century Gothic;
+}
+
+.peti-para {
+    text-align: start;
+    padding-left: 15%;
+    font-family: New Century Schoolbook;
+    font-size: 20px;
+}
+
+h5 {
+    padding-top: 25px;
+    padding-left: 20px;
+    color: brown;
+    font-size: 14px;
+}
+
+#form {
+    width: 60%;
+    height: 550px;
+    border: 1px solid black;
+    margin-left: 20%;
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    box-shadow: 10px 5px 5px #d3d3d3;
+}
+
+.nom {
+    width: 30%;
+    height: 33px;
+    border: solid #e8e8e8;
+    background-color: #e8e8e8;
+    margin-left: 10%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.tele {
+    width: 30%;
+    height: 33px;
+    border: solid #e8e8e8;
+    background-color: #e8e8e8;
+    text-align: center;
+    margin-left: 15%;
+}
+
+.email {
+    width: 76%;
+    height: 33px;
+    border: solid #e8e8e8;
+    background-color: #e8e8e8;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.msg {
+    width: 76%;
+    height: 250px;
+    border: solid #e8e8e8;
+    background-color: #e8e8e8;
+    margin-left: 10%;
+    margin-top: 5%;
+    text-align: left;
+}
+
+.btncont {
+    width: 100px;
+    height: 30px;
+    margin-left: 38%;
+    margin-top: 5%;
+    border: solid;
+    border-radius: 25px;
+    background-color: rgb(104, 13, 189);
+    color: #fff;
+}
+
+.btncont:hover {
+    width: 56%;
+    margin-left: 18%;
+}
+
+
+/*#################### designede somme nous #####################*/
+
+.titre2 {
+    padding-left: 33%;
+    background: #8E2DE2;
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-family: Century Gothic;
+}
+
+.note {
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+}
+
+.p-dv {
+    font-size: 18px;
+}

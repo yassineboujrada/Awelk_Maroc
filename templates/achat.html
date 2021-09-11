@@ -1,0 +1,28 @@
+{% extends "gene.html" %}
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static',filename='/designe/product.css')}}">
+    <br><br><br><br>
+    <form id="achat" action="/nosproduit/achat/demander" method="POST">
+        <img src="/static/images/icon.png" class="icon"><span>Entrez votre coordonnées</span>
+        <input name="se" class="se" value="{{x}}"><input name="co" class="se" value="{{y}}"><br>
+        <input name="user" class="name" id="name"placeholder="Saisir votre nom complet" required><br>
+        <input name="numtele" class="numerotele" id="numerotele"placeholder="Saisir votre numéro de téléphone (pas utliser (+212))" required><br>
+         {% with messages = get_flashed_messages(category_filter=["er"]) %}
+        {% if messages %}
+            {% for msg in messages %}
+                <p class='error' class='disappear'>{{ msg }}</p>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+        <input name="adress" class="adr" id="adr" placeholder="Saisir votre adresse" required><br>
+        <input name="ville" class="city" id="city" placeholder="Saisir votre ville" required><br>
+        <div class="cdrnombre" >
+            <div id="moin">-</div >
+            <input name="nbr" value="1" id="nbr"> 
+            <div id="plus">+</div>
+        </div><br><br><br>
+        <button type="submit" class="btnachat">Acheter maintenant</button>
+    </form>
+    <script src="{{url_for('static',filename='/annimtion/gene.js')}}"> </script>
+
+{% endblock content %}

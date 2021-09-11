@@ -1,0 +1,212 @@
+/*#sous_body {
+    width: 80%;
+    margin-left: 10%;
+    box-shadow: 10px 5px 5px #d3d3d3;
+    border: 2px solid;
+    border-radius: 10px;
+    height: 450px;
+}
+
+.adm {
+    width: 100px;
+    height: 100px;
+    padding-top: 2%;
+    padding-left: 7%;
+}
+
+.wel {
+    margin-top: -6%;
+    padding-left: 20%;
+    font-family: Rockwell;
+    font-size: 19px;
+}
+
+
+margin-left: 34%;
+    margin-top: -33%;
+    height: 420px;
+    width: 66%;
+    position: relative;
+    left: 34%;
+    bottom: 82%;
+    height: 450px;
+    width: 66%;
+
+.adm1 {
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#img_ad {
+    height: 420px;
+    width: 66%;
+    margin-left: 34%;
+    margin-top: -38%;
+    object-fit: cover;
+}
+
+.user_ad,
+.password_ad {
+    border-radius: 25px;
+    padding-left: 15px;
+    margin-top: 25px;
+    margin-left: 5%;
+    color: blueviolet;
+    font-size: 15px;
+    width: 220px;
+    border: 0.5px solid rgb(107, 103, 103);
+}
+
+.for_pass {
+    text-decoration: underline;
+    color: blueviolet;
+    font-size: 14px;
+    cursor: pointer;
+    padding-top: 4px;
+    padding-left: 15%;
+}
+
+.btn_pass {
+    color: #fff;
+    width: 170px;
+    height: 30px;
+    border: solid;
+    border-radius: 25px;
+    background-color: rgb(89, 23, 150);
+    margin-left: 8.5%;
+    margin-top: 20px;
+    
+}
+
+.btn_pass:hover {
+    margin-left: 5%;
+    width: 240px;
+}
+
+.er {
+    color: red;
+    border: solid;
+    width: 220px;
+    text-align: center;
+    border-radius: 25px;
+    margin-left: 6%;
+}
+
+#post {
+    margin-top: 10%;
+}
+*/
+
+body {
+    background: #41295a;
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);
+    background: linear-gradient(to right, #2F0743, #41295a);
+}
+
+#sous_body {
+    width: 27%;
+    height: 65%;
+    background-color: #d3d3d3;
+    border-radius: 25% 0%;
+    text-align: center;
+}
+
+.success,
+.problem {
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    animation: move 10s;
+    -webkit-animation: move 10s infinite;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.problem {
+    color: red;
+}
+
+@-webkit-keyframes move {
+    0% {
+        opacity: 1;
+    }
+    15% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    75% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.login_body {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.wel {
+    font-family: Rockwell;
+    font-size: 19px;
+}
+
+.user_ad,
+.password_ad {
+    color: blueviolet;
+    font-size: 15px;
+    width: 220px;
+    border-radius: 25px;
+    outline: none;
+    padding-left: 10px;
+    border: 1px solid;
+    font-family: 19px;
+}
+
+.for_pass {
+    text-decoration: underline;
+    color: blueviolet;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn_pass {
+    color: #fff;
+    width: 170px;
+    height: 30px;
+    border: solid rgb(89, 23, 150);
+    border-radius: 25px;
+    background-color: rgb(89, 23, 150);
+}
+
+.btn_pass:hover {
+    background-color: #fff;
+    color: rgb(89, 23, 150);
+    border: solid #fff;
+}
+
+
+/**/
+
+#forget_form {
+    background-color: #d3d3d3;
+    border-radius: 25% 0%;
+    text-align: center;
+    width: 27%;
+}
+
+.error {
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

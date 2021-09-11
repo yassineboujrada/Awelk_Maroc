@@ -1,0 +1,30 @@
+{% extends "gene.html" %}
+{% block content %}
+    <link rel="stylesheet" href="{{url_for('static',filename='/designe/product.css')}}">
+    <br><br><br>
+    <img src="/static/images/detailproduct/awelk31.jpg" class="img-3"><br>
+    <img src="/static/images/what.jpg" id="imagewhat" onclick="location='https://api.whatsapp.com/send/?phone=%2B212608703533&text=Je+vous+contacte+%C3%A0+propos+de+%28DAX+3D+THE+HUNTER+SAC+%C3%80+DOS%29&app_absent=0'">
+    <div  style="height: 700px; display:bloc;">
+        <form id="first" action="{{url_for("achat")}}" method='POST'>
+            <input type="button"class="detail1" name='product' value="DAX 3D THE HUNTER SAC À DOS">
+            <p class="prix1">549.00 dh Taxes incluses.</p>
+            <input  name="color_sac" id="color-select" style="border:0px solid; color:white;" value="Noir">
+            <button type="submit" class="btnacc" style="margin-left:45%;">Acheter maintenant</button>
+        </form>
+        <div id="second">
+            <p class="para1">DAX 3D The Hunter Sac à Dos est conçu pour vous simplifier la vie en déplacement.
+                Avec la possibilité d'ouvrir complètement comme un bagage, vos vêtements,
+                livres et articles de voyage s'intègrent parfaitement à l'intérieur.
+                La conception carapace dure de ce sac lui permet de maintenir sa forme même s'il est vide.
+                Un organisateur électronique: l'organisateur peut contenir des écouteurs, câbles, montre, un téléphone portable, le chargeur, etc., tout en vous permettant de ranger et trouver rapidement ce que vous n'avez pas besoin.</p>
+            <p class="para2">Vous cherchez une idée de cadeau originale pour quelqu'un de spécial?</p><br>
+            <p class="para3">Faites-vous plaisir ou offrez en cadeau à quelqu'un de spécial
+                DAX 3D The Hunter Sac à Dos est l'idée parfaite pour cadeau homme, garçon, pour une fête d'anniversaire, soirée de remise des diplômes ou même pour un amateur de la backpacking , GYM, bien sûr, Parfait pour un collègue, patron, employé, ou un ami qui aime des minimaliste Sac à dos . Tout le monde va sûrement tous les apprécier ce DAX 3D The Hunter Sac à Dos.</p>
+        </div>
+    </div><br>
+    <img src="/static/images/detailproduct/awelk32.jpg" class="img-31">
+    <img src="/static/images/detailproduct/awelk33.jpg" class="img-32"><br>
+    <img src="/static/images/detailproduct/awelk34.jpg" class="img-33">
+    <img src="/static/images/detailproduct/awelk35.jpg" class="img-34"><br><br><br><br>
+    <button onclick="location='/nosproduit'" class="btnproduit">Page de produit</button><br>
+{% endblock content %}

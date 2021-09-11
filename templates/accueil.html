@@ -1,0 +1,78 @@
+{% extends "gene.html" %}
+{% block content %}
+    <link rel="stylesheet" href="{{url_for('static',filename='/designe/gene.css')}}">
+    <div id="placeimg">
+    </div>
+    <h2 class="def">Awelk Maroc</h2>
+    <p class="intro_awelk">Offrez à votre dos ce qu'il se fait de plus beau ! Sacs à dos pour homme moderne. Large sélection avec tous les styles : vintage, ville, chic, cuir, toile.</p><br>
+    <img src="/static/images/accueil1.jpg" class="imgacc">
+    <p class="decouvre">Awelk vous permettre de découvrir le monde dans lequel vous vivez est toujours le moteur de tout ce que nous faisons.</p>
+    <!--####################################################-->
+    <div class="des-dev" style="height: 700px; display:bloc;margin-top:40%;">
+        <form id="first" action="{{url_for("achat")}}" method='POST'>
+            <input class="detail11" name='product' value="BUSINESS SAC À DOS DE VOYAGE">
+            <p class="prix1">500.00 dh  Taxes incluses.</p>
+            <select name="color_sac" id="color-select">
+                <option value="">--Choisis votre color--</option>
+                <option value="noir">Color Noir</option>
+                <option value="marron">Color Marron</option>
+                <option value="gris">Color Gris</option>
+            </select>
+            <button type="submit" class="btnacc">Acheter maintenant</button>
+            <a href="/nosproduit/BUSINESS-SAC-À-DOS-DE-VOYAGE" class="detail">Tous Les Detai</a>
+        </form>
+        <div id="first1">
+            <img src="/static/images/product/awelk1.jpg" class="imgacc2" onclick="location='/nosproduit/BUSINESS-SAC-À-DOS-DE-VOYAGE'">
+        </div>
+    </div>
+    <!--####################################################-->
+    <div class="des-dev2" style="height: 700px; display:bloc;">
+        <form id="second" action="{{url_for("achat")}}" method='POST'>
+            <input class="detail1" name='product' value="HEWLETT BACKPACK">
+            <p class="prix1">499.00 dh  Taxes incluses.</p>
+            <select name="color_sac" id="color-select">
+                <option value="">--Choisis votre color--</option>
+                <option value="noir">Color Noir</option>
+            </select>
+            <button type="submit"  class="btnacc">Acheter maintenant</button>
+            <a href="/nosproduit/HEWLETT-BACKPACK" class="detail">Tous Les Detai</a>
+        </form>
+        <div id="second2">
+            <img src="/static/images/product/awelk11.jpg" class="imgacc2" onclick="location='/nosproduit/HEWLETT-BACKPACK'">
+        </div>
+    </div>
+    <!--####################################################-->
+    <div class="des-dev3"style="height: 700px; display:bloc;">
+        <form id="first" class="third" action="{{url_for("achat")}}" method='POST'>
+            <input class="detail11" name='product' value="ARCTIC HUNTER SAC A DOS MULTI-FONCTION">
+            <p class="prix1">500.00 dh  Taxes incluses.</p>
+            <select name="color_sac" id="color-select">
+                <option value="">--Choisis votre color--</option>
+                <option value="noir">Color Noir</option>
+                <option value="marron">Color Marron</option>
+            </select>
+            <button type="submit" class="btnacc">Acheter maintenant</button>
+            <a href="/nosproduit/ARCTIC-HUNTER-SAC-A-DOS-MULTI-FONCTION" class="detail">Tous Les Detai</a>
+        </form>
+        <div id="first1" class="third3">
+            <img src="/static/images/product/awelk4.jpg" class="imgacc2" onclick="location='/nosproduit/ARCTIC-HUNTER-SAC-A-DOS-MULTI-FONCTION'">
+        </div>
+    </div>
+    <!--####################################################-->
+    {% for img in imgs %}
+        <div class="des-dev3"style="height: 700px; display:bloc;">
+            <form id="first" class="third" action="{{url_for("achat")}}" method='POST'>
+                <input class="detail11" name='product' value="{{img.title}}">
+                <p class="prix1">{{ img.prix }} Taxes incluses.</p>
+                <button type="submit" class="btnacc">Acheter maintenant</button>
+            </form>
+            <div id="first1" style="color:red;"class="third3">
+            
+                <img src='{{img.name}}'>
+                
+            </div>
+            
+        </div>
+    {% endfor %}
+    <script src="{{url_for('static',filename='/annimtion/gene.js')}}" async defer></script>
+{% endblock content %}

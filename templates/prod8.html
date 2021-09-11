@@ -1,0 +1,31 @@
+{% extends "gene.html" %}
+{% block content %}
+    <link rel="stylesheet" href="{{url_for('static',filename='/designe/product.css')}}">
+    <br><br><br>
+    <img src="/static/images/detailproduct/awelk81.jpg" class="img-3"><br>
+    <img src="/static/images/what.jpg" id="imagewhat" onclick="location='https://api.whatsapp.com/send/?phone=%2B212608703533&text=Je+vous+contacte+%C3%A0+propos+de+%28BUSINESS+SAC+%C3%80+DOS+SMART+LAPTOP+CONVERTIBLE%29&app_absent=0'">
+    <div  style="height: 700px; display:bloc;">
+        <form id="first" action="{{url_for("achat")}}" method='POST'>
+            <input type="button"class="detail11" name='product' value="BUSINESS SAC À DOS SMART LAPTOP CONVERTIBLE">
+            <p class="prix1">500.00 DH  Taxes incluses.</p>
+            <input  name="color_sac" id="color-select" style="border:0px solid; color:white;" value="Noir">
+            <button type="submit" class="btnacc" style="margin-left:45%;">Acheter maintenant</button>
+        </form>
+        <div id="second">
+            <p class="para1">Business Sac à dos Smart Laptop convertible conçue pour suivre votre rythme au quotidien. Que ce soit pour vos déplacements quotidiens, votre travail, pour aller au sport ou pour un court voyage,
+
+            Port de chargement USB externe , vous pouvez facilement charger des appareils électroniques tout en marchant. Veuillez noter que ce sac à dos ne comprend pas de puissance.
+
+            </p><br>
+            <p class="para2">Multifonctionnel structure :</p><br>
+            <p class="para3">Business Sac à dos Smart Laptop convertible multi-couches de l'espace de stockage de grande capacité pour répondre à vos besoins quotidiens, adaptée pour ordinateurs portables 15,6 pouces, vous pouvez travailler et voyager sans problèmes. 
+
+            </p>
+        </div>
+    </div><br>
+    <img src="/static/images/detailproduct/awelk82.jpg" class="img-31">
+    <img src="/static/images/detailproduct/awelk83.jpg" class="img-32"><br>
+    <img src="/static/images/detailproduct/awelk84.jpg" class="img-33">
+    <img src="/static/images/detailproduct/awelk85.jpg" class="img-34"><br><br><br><br>
+    <button onclick="location='/nosproduit'" class="btnproduit">Page de produit</button><br>
+{% endblock content %}

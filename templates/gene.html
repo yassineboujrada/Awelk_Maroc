@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AWELK MAROC</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='/designe/gene.css')}}">
+    <link rel="icon" type="image/png" sizes="10×16" href="/static/images/logo.png">
+</head>
+
+<body>
+    <div id="menu">
+        <div class="head1">
+            <p class='titre'>Awelk</p>
+            <img class='img-head' src="/static/images/logo.png">
+        </div>
+        <nav id="side">
+            <a href="/" id="par" class="lien1">ACCUEIL</a>
+            <a href="/nosproduit" id="par" class="lien2">Nos Produits</a>
+            <a href="/Contactez-nous" id="par" class="lien3">Contactez Nous</a>
+            <a href="/Qui-Somme-Nous" id="par" class="lien4">Qui Sommes-Nous ?</a>
+        </nav>
+    </div>
+    {% block content %} {% endblock content %}
+    <footer id="footer">
+        <div id="first_part_foter">
+            <h4 class="somme1" onclick="location='/Qui-Somme-Nous'">Awelk Maroc</h4>
+            <a href="/Qui-Somme-Nous" class="propos">A propos de Nous</a>
+            <a href="/Termes" class="cnd">Termes & Conditions</a>
+            <h5 class="login_asadmin" onclick="location='/login'">login as administrator</h5>
+        </div>
+        <div id="second_part_foter">
+            <h4 class="somme1" style="position: relative;top: 25px;">Prendre Contact :</h4>
+            <img src="/static/images/email.jpg" class="imgmail">
+            <p class="text_footer1">bou8027@gmail.com</p>
+            <img src="/static/images/p.jpg" class="imgwhat">
+            <p class="text_footer2">+212 6689-44952</p>
+        </div>
+    </footer>
+    <div id="copy">&#169; AWELK MAROC</div>
+    <script src="{{url_for( 'static',filename='/annimtion/gene.js' )}} " async defer></script>
+</body>
+
+</html>

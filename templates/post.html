@@ -1,0 +1,25 @@
+{% extends "gene.html" %}
+{% block content %} 
+<link rel="stylesheet" href="{{url_for('static',filename='/designe/admin.css')}}">
+<br><br><br><br>
+  {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+          {% for category, msg in messages %}
+              <p class="{{category}}">{{ msg }}</p>
+          {% endfor %}
+      {% endif %}
+  {% endwith %}
+  
+<div class="login_body">
+  <div id="sous_body">    
+    <form action"" id="form_login" method="POST" enctype="multipart/form-data">
+        <br><br>
+        <p class="info_mail">Bonjour de votre plat form de post</p><br><br><br>
+      <input type="file" id="img_file" name="img_file" autocomplete="off" required><br><br>
+      <input type="text" id="title" class="user_ad" name="title_product" placeholder="Nom de produit" required><br><br>
+      <input type="text" id="prix" name="price-product" class="user_ad" placeholder="Prix de produit" required><br><br>
+      <button type="submit" class="btn_pass">POSTULER</button><br><br>
+    </form>
+  </div>
+</div>
+{% endblock content %}

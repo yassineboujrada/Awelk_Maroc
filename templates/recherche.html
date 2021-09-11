@@ -1,0 +1,44 @@
+{% extends "gene.html" %}
+{% block content %}
+    <link rel="stylesheet" href="{{url_for('static',filename='/designe/gene2.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='/designe/product.css')}}"><br><br><br><br>
+    <div id="busines">
+    <div id="selectprod">
+        <!--################################# pro1 #################-->
+        <div id="pro1">
+            <div class="imgpro">
+                <img src="/static/images/product/awelk1.jpg" class="imgprod">
+            </div>
+            <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
+                <p class="infopro">BUSINESS SAC À DOS DE VOYAGE</p>
+                <p class="prixpro">500.00 DH</p>
+                <button class="btnpro" onclick="location='/nosproduit/BUSINESS-SAC-À-DOS-DE-VOYAGE'">Lire La suite</button>
+            </div>
+        </div>
+        <!--################################# pro2 #################-->
+        <div id="pro1" style="position:relative;left:35%; top:-97%;">
+            <div class="imgpro">
+                <img src="/static/images/product/awelk5.jpg" class="imgprod">
+            </div>
+            <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
+                <p class="infopro">FOLDABLE SMART SAC À DOS VOYAGE & BUSINESS</p>
+                <p class="prixpro">249.00 dh</p>
+                <button class="btnpro" onclick="location='/nosproduit/FOLDABLE-SMART-SAC-À-DOS-VOYAGE-&-BUSINESS'">Lire La suite</button>
+            </div>
+        </div>
+        <!--################################# pro3 #################-->
+        <div id="pro1" style="position:relative;left:70%; top:-196%;">
+            <div class="imgpro">
+                <img src="/static/images/product/awelk9.jpg" class="imgprod">
+            </div>
+            <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
+                <p class="infopro">BUSINESS SAC À DOS SMART LAPTOP CONVERTIBLE</p>
+                <p class="prixpro">500.00 dh</p>
+                <button class="btnpro" onclick="location='/nosproduit/BUSINESS-SAC-À-DOS-SMART-LAPTOP-CONVERTIBLE'">Lire La suite</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="dax"></div>
+    <script src="{{url_for('static',filename='/annimtion/gene.js')}}"> </script>
+{% endblock content %}

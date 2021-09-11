@@ -1,0 +1,373 @@
+/*######################## partie de head ########################*/
+
+#menu {
+    width: 100.8%;
+    height: 75px;
+    background-color: #131313;
+    position: fixed;
+    top: -10px;
+    left: -10px;
+    display: block;
+    z-index: 999;
+}
+
+.titre {
+    color: #fff;
+    font-family: Century Gothic;
+    font-size: 25px;
+    padding-left: 30%;
+    width: 100px;
+    cursor: pointer;
+}
+
+.img-head {
+    width: 25px;
+    height: 35px;
+    padding-left: 26%;
+    position: relative;
+    top: -55px;
+}
+
+#par {
+    text-decoration: none;
+    font-family: Segoe UI;
+    color: #fff;
+    width: 180px;
+}
+
+#par:hover {
+    color: rgb(158, 88, 223);
+}
+
+.lien1 {
+    position: fixed;
+    top: 23px;
+    left: 52%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.lien2 {
+    position: fixed;
+    top: 23px;
+    left: 61%;
+    color: #fff;
+}
+
+.lien3 {
+    position: fixed;
+    top: 23px;
+    left: 72%;
+    color: #fff;
+}
+
+.lien4 {
+    position: fixed;
+    top: 23px;
+    left: 85%;
+    color: #fff;
+}
+
+
+/*####################### partie de footer ##############################*/
+
+#footer {
+    width: 102.2%;
+    display: block;
+    height: 30%;
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    position: relative;
+    bottom: -27px;
+    left: -20px;
+    z-index: 999;
+}
+
+#copy {
+    width: 102.2%;
+    height: 30px;
+    display: block;
+    background-color: #d3d3d3;
+    position: relative;
+    bottom: -10px;
+    left: -20px;
+    text-align: center;
+    z-index: 999;
+}
+
+.somme1 {
+    color: #f5f5f5;
+    font-family: Rockwell;
+    padding-left: 7%;
+    cursor: pointer;
+}
+
+.login_asadmin {
+    color: #f5f5f5b7;
+    font-family: Rockwell;
+    cursor: pointer;
+    margin-top: 19%;
+    margin-left: 7%;
+    cursor: pointer;
+}
+
+#first_part_foter,
+#second_part_foter {
+    width: 350px;
+    height: 75%;
+}
+
+#first_part_foter {
+    margin-left: 10%;
+    position: absolute;
+    top: 10%;
+}
+
+#second_part_foter {
+    margin-left: 55%;
+    position: relative;
+    top: 0%;
+}
+
+.propos,
+.cnd {
+    text-decoration: none;
+    color: #f5f5f5b7;
+}
+
+.propos {
+    padding-left: 7%;
+}
+
+.cnd {
+    position: relative;
+    top: 30%;
+    left: -34%;
+}
+
+.imgmail {
+    padding-left: 7%;
+    position: relative;
+    top: 30px;
+}
+
+.imgwhat {
+    width: 30px;
+    height: 30px;
+    padding-left: 7%;
+    position: relative;
+    top: 0px;
+}
+
+.text_footer1,
+.text_footer2 {
+    padding-left: 20%;
+    font-size: 18px;
+    color: #f5f5f5b7;
+}
+
+.text_footer1 {
+    position: relative;
+    top: -15px;
+}
+
+.text_footer2 {
+    position: relative;
+    top: -50px;
+}
+
+
+/*################### Designe de la Partie d'accueil ######################*/
+
+.def {
+    padding-left: 40%;
+    background: #a8c0ff;
+    background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);
+    background: linear-gradient(to right, #3f2b96, #a8c0ff);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.intro_awelk {
+    padding-left: 10%;
+    font-family: Gabriola;
+    font-size: 22px;
+}
+
+.imgacc {
+    padding-left: 15px;
+    width: 60%;
+    height: 60%;
+}
+
+.decouvre {
+    padding-left: 67%;
+    margin-top: -35%;
+    font-family: Bodoni MT;
+    font-size: 18px;
+}
+
+.imgacc2 {
+    width: 80%;
+    height: 100%;
+    padding-left: 5%;
+}
+
+.detail1,
+.detail11 {
+    padding-top: 80px;
+    padding-left: 13%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 0px solid;
+    background-color: #fff;
+}
+
+.detail11 {
+    width: 500px;
+    background-color: #fff;
+}
+
+.prix1 {
+    width: 110px;
+    color: #302b2b;
+    font-size: 18px;
+    position: relative;
+    top: 20px;
+    padding-left: 13%;
+}
+
+#color-select {
+    width: 200px;
+    height: 40px;
+    position: relative;
+    top: 30px;
+    margin-left: 13%;
+}
+
+.btnacc {
+    color: white;
+    background-color: rgb(110, 72, 180);
+    width: 200px;
+    height: 40px;
+    position: relative;
+    top: 140px;
+    left: -33%;
+    border: 0 solid rgb(110, 72, 180);
+}
+
+.detail {
+    color: #c31432;
+    position: relative;
+    top: 220px;
+    left: -56%;
+    font-size: 16px;
+    font-family: Lucida Bright;
+}
+
+#first {
+    width: 50%;
+    height: 500px;
+    margin-top: 5%;
+    margin-left: 4%;
+}
+
+#first1 {
+    width: 40%;
+    height: 500px;
+    margin-top: -40%;
+    margin-left: 58%;
+}
+
+#second {
+    width: 50%;
+    height: 500px;
+    margin-top: 8%;
+    margin-left: 50%;
+}
+
+#second2 {
+    width: 40%;
+    height: 500px;
+    margin-top: -40%;
+    margin-left: 4%;
+}
+
+
+/*##################################  CE DESIGNE POUR DEVICES MOBILES #############################*/
+
+@media screen and (max-device-width: 500px) {
+    /* condition */
+    .title4 {
+        margin-left: -16%;
+        height: 100px;
+        font-size: 40px;
+    }
+    .parag {
+        color: #302b63;
+    }
+    /* qui somme nous */
+    .titre2 {
+        margin-left: -12%;
+        height: 100px;
+        font-size: 40px;
+    }
+    .note {
+        text-align: left;
+        font-size: 12px;
+    }
+    .p-dv {
+        text-align: center;
+        color: #302b63;
+    }
+    /* qui contactez nous */
+    .title3 {
+        margin-left: -8%;
+        height: 100px;
+        font-size: 40px;
+    }
+    h5 {
+        color: brown;
+        text-decoration: underline;
+    }
+    .peti-para {
+        margin-left: -8%;
+    }
+    .nom,
+    .tele,
+    .email,
+    .msg {
+        padding-top: 2%;
+        text-align: center;
+        font-size: 16px;
+    }
+    .msg {
+        height: 20px;
+    }
+    /* nos produit */
+    #titlepro {
+        font-size: 25px;
+        margin-left: -15%;
+    }
+    #search {
+        margin-top: 50px;
+    }
+    /* accueil */
+    .def {
+        margin-left: -10%;
+    }
+    .intro_awelk {
+        margin-left: -6%;
+    }
+    .imgacc {
+        width: 99%;
+        margin-left: -13px;
+    }
+    .decouvre {
+        margin-top: 20%;
+        margin-left: -65%;
+    }
+}
