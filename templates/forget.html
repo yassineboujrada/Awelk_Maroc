@@ -2,6 +2,14 @@
 <link rel="stylesheet" href="{{url_for('static',filename='/designe/admin.css')}}">
 <link rel="stylesheet" href="{{url_for('static',filename='/designe/gene.css')}}"><br><br>
 
+{% with messages = get_flashed_messages(category_filter=["er_ver"]) %} 
+    {% if messages %} 
+    {% for msg in messages %}
+        <p class="error">{{ msg }}</p>
+    {% endfor %} 
+    {% endif %} 
+{% endwith %}
+
 <div class="login_body">
     <form action="" method="POST" id="forget_form">
         <br><br>

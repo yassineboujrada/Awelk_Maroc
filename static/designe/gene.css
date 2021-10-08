@@ -387,6 +387,32 @@
         height: 5vw;
     }
     .for_pass,.user_ad,.password_ad,.btn_pass{font-size: 20px;}
-    .btn_pass{width:28vw;
-    height: 5vw;}
+    .btn_pass{
+        width:28vw;
+        height: 5vw;
+    }
+    #forget_form{
+        width: 50vw;
+        height: 31vw;
+        font-size: 20px;
+    }
+    .error,.success,.problem{margin-top: 5vw;font-size: 29px;}
+    /*.logout{margin-top: 20vw;
+        color: #fff;
+        width: 28vw;
+        height: 52px;
+        border: solid rgb(89, 23, 150);
+        border-radius: 25px;
+        background-color: rgb(89, 23, 150);
+        font-size: 20px;
+    }*/
+    .btn_pass{
+        margin-top: 5vw;
+    }
+    .info_mail{
+        font-size: 18px;
+    }
+    #img_file{
+        font-size: 20px;
+    }
 }

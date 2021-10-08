@@ -73,7 +73,6 @@ def login():
         session["password_administrator"]=request.form.get("password_admin")
         user=User.query.filter_by(email="bou8027@gmail.com").first()
         print(user)
-        
         if user.email==session["user_administrator"] and user.password==session["password_administrator"]:
            flash("you're login successful","success")
            login_user(user)
@@ -136,7 +135,8 @@ def forgot():
             verif_msg(rand)
             return redirect(url_for("verif"))
         else:
-            flash("Votre compte n'est pas un compte administrator",'er_ver')
+            flash("Votre compte n'est pas un compte administrator","er_ver")
+            return redirect(url_for("forgot"))
     return render_template("forget.html")
 ##########################
 @site.route("/verifier",methods=["POST","GET"])
