@@ -23,19 +23,28 @@
 .img-33,
 .img-34,
 .img-34 {
-    width: 50%;
+    width: 49%;
 }
 
-.img-32,
+
+/*.img-32,
 .img-34 {
     padding-left: 50%;
     margin-top: -50%;
 }
+*/
+
+#first {
+    padding-top: 11%;
+}
+
+.des-dev2 {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 #second {
     width: 40%;
-    margin-left: 60%;
-    margin-top: -40%;
 }
 
 .para1 {
@@ -72,7 +81,7 @@
 
 .title4 {
     color: blueviolet;
-    padding-left: 40%;
+    text-align: center;
 }
 
 .parag {
@@ -117,9 +126,8 @@
 .icon {
     width: 50px;
     height: 50px;
-    border-radius: 25px;
-    padding-left: 42%;
-    padding-top: 30px;
+    border-radius: 15px;
+    margin-left: 40%;
 }
 
 span {
@@ -151,7 +159,7 @@ span {
 .cdrnombre {
     width: 180px;
     height: 30px;
-    margin-left: 43%;
+    margin-left: 44%;
     margin-top: 3%;
 }
 
@@ -170,16 +178,16 @@ span {
 
 #moin {
     margin-left: 8%;
-    margin-top: 0%;
+    margin-top: -2%;
 }
 
 #plus {
     margin-left: 60%;
-    margin-top: -30%;
+    margin-top: -28.5%;
 }
 
 #nbr {
-    margin-left: 40%;
+    margin-left: 42%;
     width: 15px;
     position: relative;
     top: -25px;

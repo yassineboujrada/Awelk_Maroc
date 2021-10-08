@@ -1,158 +1,157 @@
-{% extends "gene.html" %}
-{% block content %}
-    <link rel="stylesheet" href="{{url_for('static',filename='/designe/gene2.css')}}">
-    <br><br><br><br>
+{% extends "gene.html" %} {% block content %}
+<link rel="stylesheet" href="{{url_for('static',filename='/designe/gene2.css')}}">
+<br><br><br><br><br>
+<div class="head_of_page">
     <p id="titlepro">Nos Produit</p>
-    <input type="search" id="search" placeholder="Rechercher sur ......" value="" onchange="openPage()">
-    <input type="button" id="btnsearch" value="Rechercher" onclick="openPage()">
-    <ul id="no_found"></ul>
-    <br>
-    {% with messages = get_flashed_messages() %}
-        {% if messages %}
-            {% for message in messages %}
-                <p class="flashes">{{ message }}</p>
-            {% endfor %}
-        {% endif %}
-    {% endwith %}
-    <!--$$$$$$$$$$$$$$$$$$$$$ premier selection $$$$$$$$$$$$$$$$$$$$$-->
+    <div class="find">
+        <input type="search" id="search" placeholder="Rechercher sur ......" value="" onchange="openPage()">
+        <input type="button" id="btnsearch" value="Rechercher" onclick="openPage()">
+    </div>
+</div><br><br>
+<ul id="no_found"></ul>
+<br> {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+<p class="flashes">{{ message }}</p>
+{% endfor %} {% endif %} {% endwith %}
+<!--$$$$$$$$$$$$$$$$$$$$$ premier selection $$$$$$$$$$$$$$$$$$$$$-->
 
-    <div id="selectprod">
-        <!--################################# pro1 #################-->
-        <div id="pro1">
-            <div class="imgpro">
-                <img src="/static/images/product/awelk1.jpg" class="imgprod">
-            </div>
-            <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
-                <p class="infopro">BUSINESS SAC À DOS DE VOYAGE</p>
-                <p class="prixpro">500.00 DH</p>
-                <button class="btnpro" onclick="location='/nosproduit/BUSINESS-SAC-À-DOS-DE-VOYAGE'">Lire La suite</button>
-            </div>
+<div id="selectprod">
+    <!--################################# pro1 #################-->
+    <div id="pro1">
+        <div class="imgpro">
+            <img src="/static/images/product/awelk1.jpg" class="imgprod">
         </div>
-        <!--################################# pro2 #################-->
-        <div id="pro1" style="position:relative;left:35%; top:-97%;">
-            <div class="imgpro">
-                <img src="/static/images/product/awelk3.jpg" class="imgprod">
-            </div>
-            <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
-                <p class="infopro">DAX 3D THE HUNTER SAC À DOS</p>
-                <p class="prixpro">549.00 dh</p>
-                <button class="btnpro" onclick="location='/nosproduit/DAX-3D-THE-HUNTER-SAC-À-DOS'">Lire La suite</button>
-            </div>
-        </div>
-        <!--################################# pro3 #################-->
-        <div id="pro1" style="position:relative;left:70%; top:-196%;">
-            <div class="imgpro">
-                <img src="/static/images/product/awelk4.jpg" class="imgprod">
-            </div>
-            <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
-                <p class="infopro">ARCTIC HUNTER SAC A DOS MULTI-FONCTION</p>
-                <p class="prixpro">500.00 DH</p>
-                <button class="btnpro" onclick="location='/nosproduit/ARCTIC-HUNTER-SAC-A-DOS-MULTI-FONCTION'">Lire La suite</button>
-            </div>
+        <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
+            <p class="infopro">BUSINESS SAC À DOS DE VOYAGE</p>
+            <p class="prixpro">500.00 DH</p>
+            <button class="btnpro" onclick="location='/nosproduit/BUSINESS-SAC-À-DOS-DE-VOYAGE'">Lire La suite</button>
         </div>
     </div>
-
-    <!--$$$$$$$$$$$$$$$$$$$$$ deuxieme selection $$$$$$$$$$$$$$$$$$$$$-->
-
-    <div id="selectprod">
-        <!--################################# pro1 #################-->
-        <div id="pro1">
-            <div class="imgpro">
-                <img src="/static/images/product/awelk5.jpg" class="imgprod">
-            </div>
-            <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
-                <p class="infopro">FOLDABLE SMART SAC À DOS VOYAGE & BUSINESS</p>
-                <p class="prixpro">249.00 dh</p>
-                <button class="btnpro" onclick="location='/nosproduit/FOLDABLE-SMART-SAC-À-DOS-VOYAGE-&-BUSINESS'">Lire La suite</button>
-            </div>
+    <!--################################# pro2 #################-->
+    <div id="pro1">
+        <div class="imgpro">
+            <img src="/static/images/product/awelk3.jpg" class="imgprod">
         </div>
-        <!--################################# pro2 #################-->
-        <div id="pro1" style="position:relative;left:35%; top:-97%;">
-            <div class="imgpro">
-                <img src="/static/images/product/awelk6.jpg" class="imgprod">
-            </div>
-            <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
-                <p class="infopro">DAX TEENAGERS ECOLE BACKPACK</p>
-                <p class="prixpro">420.00 dh</p>
-                <button class="btnpro" onclick="location='/nosproduit/DAX-TEENAGERS-ECOLE-BACKPACK'">Lire La suite</button>
-            </div>
-        </div>
-        <!--################################# pro3 #################-->
-        <div id="pro1" style="position:relative;left:70%; top:-196%;">
-            <div class="imgpro">
-                <img src="/static/images/product/awelk7.jpg" class="imgprod">
-            </div>
-            <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
-                <p class="infopro">LAST HUNTER SAC À DOS</p>
-                <p class="prixpro">549.00 dh</p>
-                <button class="btnpro" onclick="location='/nosproduit/last-hunter-sac-a-dos'">Lire La suite</button>
-            </div>
+        <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
+            <p class="infopro">DAX 3D THE HUNTER SAC À DOS</p>
+            <p class="prixpro">549.00 dh</p>
+            <button class="btnpro" onclick="location='/nosproduit/DAX-3D-THE-HUNTER-SAC-À-DOS'">Lire La suite</button>
         </div>
     </div>
-
-    <!--$$$$$$$$$$$$$$$$$$$$$ troisieme selection $$$$$$$$$$$$$$$$$$$$$-->
-
-    <div id="selectprod">
-        <!--################################# pro1 #################-->
-        <div id="pro1">
-            <div class="imgpro">
-                <img src="/static/images/product/awelk8.jpg" class="imgprod">
-            </div>
-            <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
-                <p class="infopro">CHEST & BACK SAC POUR SORTIE</p>
-                <p class="prixpro">220.00 DH</p>
-                <button class="btnpro" onclick="location='/nosproduit/CHEST-&-BACK-SAC-POUR-SORTIE'">Lire La suite</button>
-            </div>
+    <!--################################# pro3 #################-->
+    <div id="pro1">
+        <div class="imgpro">
+            <img src="/static/images/product/awelk4.jpg" class="imgprod">
         </div>
-        <!--################################# pro2 #################-->
-        <div id="pro1" style="position:relative;left:35%; top:-97%;">
-            <div class="imgpro">
-                <img src="/static/images/product/awelk9.jpg" class="imgprod">
-            </div>
-            <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
-                <p class="infopro">BUSINESS SAC À DOS SMART LAPTOP CONVERTIBLE</p>
-                <p class="prixpro">500.00 dh</p>
-                <button class="btnpro" onclick="location='/nosproduit/BUSINESS-SAC-À-DOS-SMART-LAPTOP-CONVERTIBLE'">Lire La suite</button>
-            </div>
-        </div>
-        <!--################################# pro3 #################-->
-        <div id="pro1" style="position:relative;left:70%; top:-196%;">
-            <div class="imgpro">
-                <img src="/static/images/product/awelk10.jpg" class="imgprod">
-            </div>
-            <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
-                <p class="infopro">FASHION STYLE BACKPACKFASHION STYLE BACKPACK</p>
-                <p class="prixpro">330.00 DH</p>
-                <button class="btnpro" onclick="location='/nosproduit/FASHION-STYLE-BACKPACKFASHION-STYLE-BACKPACK'">Lire La suite</button>
-            </div>
+        <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
+            <p class="infopro">ARCTIC HUNTER SAC A DOS MULTI-FONCTION</p>
+            <p class="prixpro">500.00 DH</p>
+            <button class="btnpro" onclick="location='/nosproduit/ARCTIC-HUNTER-SAC-A-DOS-MULTI-FONCTION'">Lire La suite</button>
         </div>
     </div>
+</div>
 
-    <!--$$$$$$$$$$$$$$$$$$$$$ quatrieme selection $$$$$$$$$$$$$$$$$$$$$-->
+<!--$$$$$$$$$$$$$$$$$$$$$ deuxieme selection $$$$$$$$$$$$$$$$$$$$$-->
 
-    <div id="selectprod" >
-        <!--################################# pro1 #################-->
-        <div id="pro1" style="position:relative;left:15%;">
-            <div class="imgpro">
-                <img src="/static/images/product/awelk11.jpg" class="imgprod">
-            </div>
-            <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
-                <p class="infopro">HEWLETT BACKPACK</p>
-                <p class="prixpro">449.00 dh</p>
-                <button class="btnpro" onclick="location='/nosproduit/HEWLETT-BACKPACK'">Lire La suite</button>
-            </div>
+<div id="selectprod">
+    <!--################################# pro1 #################-->
+    <div id="pro1">
+        <div class="imgpro">
+            <img src="/static/images/product/awelk5.jpg" class="imgprod">
         </div>
-        <!--################################# pro2 #################-->
-        <div id="pro1" style="position:relative;left:55%; top:-97%;">
-            <div class="imgpro" style="width:250px; margin-left: -3%;">
-                <img src="/static/images/product/awelk12.jpg" style="width:250px;" class="imgprod">
-            </div>
-            <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
-                <p class="infopro">BUSINESS SAC À DOS SMART LAPTOP CONVERTIBLE</p>
-                <p class="prixpro">500.00 dh</p>
-                <button class="btnpro" onclick="location='/nosproduit/MATT-FLAT-SAC-À-DOS'">Lire La suite</button>
-            </div>
+        <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
+            <p class="infopro">FOLDABLE SMART SAC À DOS VOYAGE & BUSINESS</p>
+            <p class="prixpro">249.00 dh</p>
+            <button class="btnpro" onclick="location='/nosproduit/FOLDABLE-SMART-SAC-À-DOS-VOYAGE-&-BUSINESS'">Lire La suite</button>
         </div>
     </div>
-    <script src="{{url_for('static',filename='/annimtion/gene.js')}}"> </script>
+    <!--################################# pro2 #################-->
+    <div id="pro1">
+        <div class="imgpro">
+            <img src="/static/images/product/awelk6.jpg" class="imgprod">
+        </div>
+        <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
+            <p class="infopro">DAX TEENAGERS ECOLE BACKPACK</p>
+            <p class="prixpro">420.00 dh</p>
+            <button class="btnpro" onclick="location='/nosproduit/DAX-TEENAGERS-ECOLE-BACKPACK'">Lire La suite</button>
+        </div>
+    </div>
+    <!--################################# pro3 #################-->
+    <div id="pro1">
+        <div class="imgpro">
+            <img src="/static/images/product/awelk7.jpg" class="imgprod">
+        </div>
+        <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
+            <p class="infopro">LAST HUNTER SAC À DOS</p>
+            <p class="prixpro">549.00 dh</p>
+            <button class="btnpro" onclick="location='/nosproduit/last-hunter-sac-a-dos'">Lire La suite</button>
+        </div>
+    </div>
+</div>
+
+<!--$$$$$$$$$$$$$$$$$$$$$ troisieme selection $$$$$$$$$$$$$$$$$$$$$-->
+
+<div id="selectprod">
+    <!--################################# pro1 #################-->
+    <div id="pro1">
+        <div class="imgpro">
+            <img src="/static/images/product/awelk8.jpg" class="imgprod">
+        </div>
+        <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
+            <p class="infopro">CHEST & BACK SAC POUR SORTIE</p>
+            <p class="prixpro">220.00 DH</p>
+            <button class="btnpro" onclick="location='/nosproduit/CHEST-&-BACK-SAC-POUR-SORTIE'">Lire La suite</button>
+        </div>
+    </div>
+    <!--################################# pro2 #################-->
+    <div id="pro1">
+        <div class="imgpro">
+            <img src="/static/images/product/awelk9.jpg" class="imgprod">
+        </div>
+        <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
+            <p class="infopro">BUSINESS SAC À DOS SMART LAPTOP CONVERTIBLE</p>
+            <p class="prixpro">500.00 dh</p>
+            <button class="btnpro" onclick="location='/nosproduit/BUSINESS-SAC-À-DOS-SMART-LAPTOP-CONVERTIBLE'">Lire La suite</button>
+        </div>
+    </div>
+    <!--################################# pro3 #################-->
+    <div id="pro1">
+        <div class="imgpro">
+            <img src="/static/images/product/awelk10.jpg" class="imgprod">
+        </div>
+        <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
+            <p class="infopro">FASHION STYLE BACKPACKFASHION STYLE BACKPACK</p>
+            <p class="prixpro">330.00 DH</p>
+            <button class="btnpro" onclick="location='/nosproduit/FASHION-STYLE-BACKPACKFASHION-STYLE-BACKPACK'">Lire La suite</button>
+        </div>
+    </div>
+</div>
+
+<!--$$$$$$$$$$$$$$$$$$$$$ quatrieme selection $$$$$$$$$$$$$$$$$$$$$-->
+
+<div id="selectprod">
+    <!--################################# pro1 #################-->
+    <div id="pro1">
+        <div class="imgpro">
+            <img src="/static/images/product/awelk11.jpg" class="imgprod">
+        </div>
+        <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
+            <p class="infopro">HEWLETT BACKPACK</p>
+            <p class="prixpro">449.00 dh</p>
+            <button class="btnpro" onclick="location='/nosproduit/HEWLETT-BACKPACK'">Lire La suite</button>
+        </div>
+    </div>
+    <!--################################# pro2 #################-->
+    <div id="pro1">
+        <div class="imgpro" style="width:250px; margin-left: -3%;">
+            <img src="/static/images/product/awelk12.jpg" style="width:250px;" class="imgprod">
+        </div>
+        <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
+            <p class="infopro">BUSINESS SAC À DOS SMART LAPTOP CONVERTIBLE</p>
+            <p class="prixpro">500.00 dh</p>
+            <button class="btnpro" onclick="location='/nosproduit/MATT-FLAT-SAC-À-DOS'">Lire La suite</button>
+        </div>
+    </div>
+</div>
+<script src="{{url_for('static',filename='/annimtion/gene.js')}}">
+</script>
 {% endblock content %}

@@ -43,8 +43,19 @@
     }
 }
 
+.head_of_page {
+    border: solid black;
+    height: 7vh;
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
+}
+
+.find {
+    margin-top: 0.5%;
+}
+
 #titlepro {
-    padding-left: 35%;
     width: 150px;
     font-size: 22px;
     background: #c31432;
@@ -54,17 +65,16 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    margin-top: 0.5%;
 }
 
 #search {
     border-radius: 30px;
     border: 2px solid black;
     height: 25px;
-    margin-left: 65%;
     width: 200px;
-    position: relative;
-    top: -7vh;
-    padding-left: 10px;
+    padding-left: 11px;
+    outline: none;
 }
 
 #btnsearch {
@@ -73,37 +83,40 @@
     background-color: #4A00E0;
     color: #fff;
     height: 25px;
-    position: relative;
-    top: -7vh;
+    width: 14vh;
 }
 
 #selectprod {
-    display: block;
     height: 450px;
-    width: 98%;
+    border: solid black;
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
 }
 
 #pro1 {
     width: 20%;
     height: 410px;
-    margin-left: 4%;
-    margin-top: 2%;
-    display: block;
+    border: solid black;
+    margin-top: 1%;
+    border: none;
 }
 
 .imgpro {
-    width: 200px;
-    height: 260px;
-    margin-top: 5%;
-    margin-left: 10%;
-    display: block;
+    width: 100%;
+    height: 270px;
+    border: solid black;
+    text-align: center;
+    border: none;
 }
 
 .textpro {
-    margin-top: -112%;
+    margin-top: -110%;
     height: 410px;
     opacity: 0;
-    display: block;
+    border: solid rgb(65, 17, 236);
+    text-align: center;
+    border: none;
 }
 
 .textpro:hover {
@@ -113,12 +126,14 @@
 .imgprod {
     width: 200px;
     height: 260px;
+    border: solid red;
+    border: none;
 }
 
 .infopro {
     font-family: Georgia;
     text-align: center;
-    padding-top: 110%;
+    padding-top: 120%;
 }
 
 .prixpro {
@@ -127,7 +142,6 @@
 
 .btnpro {
     border-radius: 20px;
-    margin-left: 60px;
     width: 50%;
     height: 8%;
     color: white;
@@ -139,6 +153,68 @@
 /*############################## designe pour paritie contactez nous #######################3*/
 
 .title3 {
+    color: #6110a8;
+    font-family: Century Gothic;
+    text-align: center;
+}
+
+
+/*
+.all_content {
+    border: solid black;
+    height: 60%;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.img_content {
+    border: solid black;
+    width: 30%;
+    height: 20%;
+    text-align: center;
+}
+*/
+
+#all_cont {
+    border: solid black;
+    height: 370px;
+    justify-content: center;
+    display: flex;
+    border: none;
+}
+
+#form {
+    border: 3px solid black;
+    text-align: center;
+    width: 35%;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 15px;
+}
+
+.nom,
+.tele,
+.email,
+.msg {
+    border-radius: 15px;
+    outline: none;
+    font-size: 16px;
+    padding-left: 12px;
+    width: 250px;
+    border: 1px solid black;
+}
+
+.btncont {
+    width: 100px;
+    height: 30px;
+    border: solid;
+    border-radius: 25px;
+    background-color: rgb(104, 13, 189);
+    color: #fff;
+}
+
+
+/*.title3 {
     padding-top: 90px;
     padding-left: 40%;
     color: #6110a8;
@@ -169,7 +245,7 @@ h5 {
     box-shadow: 10px 5px 5px #d3d3d3;
 }
 
-.nom {
+.nom,.tele,.email,.msg {
     width: 30%;
     height: 33px;
     border: solid #e8e8e8;
@@ -211,8 +287,6 @@ h5 {
 .btncont {
     width: 100px;
     height: 30px;
-    margin-left: 38%;
-    margin-top: 5%;
     border: solid;
     border-radius: 25px;
     background-color: rgb(104, 13, 189);
@@ -224,11 +298,13 @@ h5 {
     margin-left: 18%;
 }
 
+*/
+
 
 /*#################### designede somme nous #####################*/
 
 .titre2 {
-    padding-left: 33%;
+    text-align: center;
     background: #8E2DE2;
     background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
     background: linear-gradient(to right, #4A00E0, #8E2DE2);

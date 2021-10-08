@@ -1,31 +1,37 @@
 /*######################## partie de head ########################*/
 
 #menu {
-    width: 100.8%;
+    width: 100%;
     height: 75px;
     background-color: #131313;
     position: fixed;
-    top: -10px;
-    left: -10px;
     display: block;
     z-index: 999;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
 }
 
 .titre {
     color: #fff;
     font-family: Century Gothic;
     font-size: 25px;
-    padding-left: 30%;
     width: 100px;
     cursor: pointer;
+}
+
+.head1 {
+    border: solid red;
+    display: flex;
+    width: 180px;
+    margin-top: 15px;
+    margin-left: 26%;
+    border: none;
 }
 
 .img-head {
     width: 25px;
     height: 35px;
-    padding-left: 26%;
-    position: relative;
-    top: -55px;
 }
 
 #par {
@@ -72,100 +78,82 @@
 /*####################### partie de footer ##############################*/
 
 #footer {
-    width: 102.2%;
-    display: block;
-    height: 30%;
+    width: 100%;
+    height: 17vw;
+    display: flex;
     background: #0f0c29;
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    position: relative;
-    bottom: -27px;
-    left: -20px;
     z-index: 999;
+    justify-content: space-evenly;
 }
 
 #copy {
-    width: 102.2%;
+    width: 100%;
     height: 30px;
     display: block;
     background-color: #d3d3d3;
-    position: relative;
-    bottom: -10px;
-    left: -20px;
     text-align: center;
     z-index: 999;
+}
+
+#first_part_foter,
+#second_part_foter {
+    width: 400px;
+    height: 75%;
+    border: solid red;
+    border: none;
 }
 
 .somme1 {
     color: #f5f5f5;
     font-family: Rockwell;
-    padding-left: 7%;
+    font-size: 17px;
     cursor: pointer;
-}
-
-.login_asadmin {
-    color: #f5f5f5b7;
-    font-family: Rockwell;
-    cursor: pointer;
-    margin-top: 19%;
-    margin-left: 7%;
-    cursor: pointer;
-}
-
-#first_part_foter,
-#second_part_foter {
-    width: 350px;
-    height: 75%;
-}
-
-#first_part_foter {
-    margin-left: 10%;
-    position: absolute;
-    top: 10%;
-}
-
-#second_part_foter {
-    margin-left: 55%;
-    position: relative;
-    top: 0%;
+    border: solid red;
+    text-align: -moz-left;
+    border: none;
 }
 
 .propos,
-.cnd {
+.cnd,
+.login_asadmin {
     text-decoration: none;
     color: #f5f5f5b7;
+    margin-left: 8%;
+    cursor: pointer;
 }
 
-.propos {
-    padding-left: 7%;
+.first_content,
+.second_content {
+    border: solid black;
+    display: flex;
+    height: 23%;
+    border: none;
 }
 
-.cnd {
-    position: relative;
-    top: 30%;
-    left: -34%;
-}
-
-.imgmail {
-    padding-left: 7%;
-    position: relative;
-    top: 30px;
-}
-
+.imgmail,
 .imgwhat {
-    width: 30px;
+    width: 35px;
     height: 30px;
-    padding-left: 7%;
-    position: relative;
-    top: 0px;
+    margin-left: 5%;
 }
 
 .text_footer1,
 .text_footer2 {
-    padding-left: 20%;
     font-size: 18px;
     color: #f5f5f5b7;
+    margin-left: 5%;
 }
+
+
+/*
+.imgwhat {
+    width:50px;
+    height:20px;
+}
+
+
 
 .text_footer1 {
     position: relative;
@@ -176,12 +164,18 @@
     position: relative;
     top: -50px;
 }
+*/
 
 
 /*################### Designe de la Partie d'accueil ######################*/
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .def {
-    padding-left: 40%;
     background: #a8c0ff;
     background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);
     background: linear-gradient(to right, #3f2b96, #a8c0ff);
@@ -189,25 +183,56 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 
 .intro_awelk {
-    padding-left: 10%;
     font-family: Gabriola;
     font-size: 22px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.testt {
+    display: flex;
 }
 
 .imgacc {
-    padding-left: 15px;
-    width: 60%;
+    width: 80%;
     height: 60%;
 }
 
 .decouvre {
-    padding-left: 67%;
-    margin-top: -35%;
     font-family: Bodoni MT;
     font-size: 18px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.des-dev {
+    display: flex;
+    margin-top: 13%;
+}
+
+#first1 {
+    width: 40%;
+    height: 500px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 6%;
+}
+
+#first {
+    width: 40%;
+    height: 500px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 6%;
+    justify-items: center;
 }
 
 .imgacc2 {
@@ -218,8 +243,6 @@
 
 .detail1,
 .detail11 {
-    padding-top: 80px;
-    padding-left: 13%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
     border: 0px solid;
@@ -227,25 +250,22 @@
 }
 
 .detail11 {
-    width: 500px;
+    width: 450px;
     background-color: #fff;
+    text-align: center;
 }
 
 .prix1 {
-    width: 110px;
+    width: 210px;
     color: #302b2b;
     font-size: 18px;
-    position: relative;
-    top: 20px;
-    padding-left: 13%;
+    text-align: center;
+    margin-left: 28.5%;
 }
 
 #color-select {
     width: 200px;
     height: 40px;
-    position: relative;
-    top: 30px;
-    margin-left: 13%;
 }
 
 .btnacc {
@@ -253,47 +273,13 @@
     background-color: rgb(110, 72, 180);
     width: 200px;
     height: 40px;
-    position: relative;
-    top: 140px;
-    left: -33%;
-    border: 0 solid rgb(110, 72, 180);
+    border: none;
 }
 
 .detail {
     color: #c31432;
-    position: relative;
-    top: 220px;
-    left: -56%;
     font-size: 16px;
     font-family: Lucida Bright;
-}
-
-#first {
-    width: 50%;
-    height: 500px;
-    margin-top: 5%;
-    margin-left: 4%;
-}
-
-#first1 {
-    width: 40%;
-    height: 500px;
-    margin-top: -40%;
-    margin-left: 58%;
-}
-
-#second {
-    width: 50%;
-    height: 500px;
-    margin-top: 8%;
-    margin-left: 50%;
-}
-
-#second2 {
-    width: 40%;
-    height: 500px;
-    margin-top: -40%;
-    margin-left: 4%;
 }
 
 

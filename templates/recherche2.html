@@ -1,30 +1,30 @@
-{% extends "gene.html" %}
-{% block content %}
-    <link rel="stylesheet" href="{{url_for('static',filename='/designe/gene2.css')}}">
-    <link rel="stylesheet" href="{{url_for('static',filename='/designe/product.css')}}"><br><br><br><br>
-    <div id="selectprod" >
-        <!--################################# pro1 #################-->
-        <div id="pro1" style="position:relative;left:15%;">
-            <div class="imgpro">
-                <img src="/static/images/product/awelk3.jpg" class="imgprod">
-            </div>
-            <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
-                <p class="infopro">DAX 3D THE HUNTER SAC À DOS</p>
-                <p class="prixpro">549.00 dh</p>
-                <button class="btnpro" onclick="location='/nosproduit/DAX-3D-THE-HUNTER-SAC-À-DOS'">Lire La suite</button>
-            </div>
+{% extends "gene.html" %} {% block content %}
+<link rel="stylesheet" href="{{url_for('static',filename='/designe/gene2.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='/designe/product.css')}}"><br><br><br><br>
+<div id="selectprod">
+    <!--################################# pro1 #################-->
+    <div id="pro1">
+        <div class="imgpro">
+            <img src="/static/images/product/awelk3.jpg" class="imgprod">
         </div>
-        <!--################################# pro2 #################-->
-        <div id="pro1" style="position:relative;left:55%; top:-97%;">
-            <div class="imgpro">
-                <img src="/static/images/product/awelk6.jpg" class="imgprod">
-            </div>
-            <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
-                <p class="infopro">DAX TEENAGERS ECOLE BACKPACK</p>
-                <p class="prixpro">420.00 dh</p>
-                <button class="btnpro" onclick="location='/nosproduit/DAX-TEENAGERS-ECOLE-BACKPACK'">Lire La suite</button>
-            </div>
+        <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
+            <p class="infopro">DAX 3D THE HUNTER SAC À DOS</p>
+            <p class="prixpro">549.00 dh</p>
+            <button class="btnpro" onclick="location='/nosproduit/DAX-3D-THE-HUNTER-SAC-À-DOS'">Lire La suite</button>
         </div>
     </div>
-    <script src="{{url_for('static',filename='/annimtion/gene.js')}}"> </script>
+    <!--################################# pro2 #################-->
+    <div id="pro1">
+        <div class="imgpro">
+            <img src="/static/images/product/awelk6.jpg" class="imgprod">
+        </div>
+        <div class="textpro" onmouseover="bla(this)" onmouseout="bla2(this)">
+            <p class="infopro">DAX TEENAGERS ECOLE BACKPACK</p>
+            <p class="prixpro">420.00 dh</p>
+            <button class="btnpro" onclick="location='/nosproduit/DAX-TEENAGERS-ECOLE-BACKPACK'">Lire La suite</button>
+        </div>
+    </div>
+</div>
+<script src="{{url_for('static',filename='/annimtion/gene.js')}}">
+</script>
 {% endblock content %}

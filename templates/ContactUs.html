@@ -1,15 +1,16 @@
-{% extends "gene.html" %}
-{% block content %}
-    <link rel="stylesheet" href="{{url_for('static',filename='/designe/gene2.css')}}">
-	<h3 class="title3">SERVICE CLIENTÈLE</h3><br>
-	<h5>VOUS AVEZ BESOIN D’AIDE AVEC VOTRE COMMANDE EN LIGNE?</h5><br><br>
-	<p class="peti-para">Nous sommes toujours là pour vous aider! Voici quelques liens pouvant vous répondre:</p><br>
-	<p class="peti-para">Si vous souhaitez contacter le service à la clientèle au sujet de votre commande en ligne, veuillez remplir le formulaire qui se trouve sur cette page. Nous nous assurerons de vous revenir dès que possible.</p><br>
-	<form action="/Contactez-nous/envoie" id="form" method="POST">
-		<input type="text" class="nom" name="nom" placeholder="Nom et prénom" required>
-		<input type="text" class="tele" name="tele" placeholder="votre numéro de téléphone" required><br>
-		<input type="text" class="email" name="email" placeholder="Votre E-mail" required><br>
-		<textarea name="msg" class="msg" placeholder="Votre Message" required></textarea><br>
-		<button type="submit" class="btncont">Envoyer</button>
-	</form>
-{% endblock content %}
+{% extends "gene.html" %} {% block content %}
+<link rel="stylesheet" href="{{url_for('static',filename='/designe/gene2.css')}}"><br><br><br><br><br>
+
+<h3 class="title3">SERVICE CLIENTÈLE</h3><br><br><br>
+<h3 style="text-align: center;">VOUS AVEZ BESOIN D’AIDE AVEC VOTRE COMMANDE EN LIGNE?</h3><br><br>
+<!--<p class="peti-para">Nous sommes toujours là pour vous aider! Voici quelques liens pouvant vous répondre:</p><br>
+    <p class="peti-para">Si vous souhaitez contacter le service à la clientèle au sujet de votre commande en ligne, veuillez remplir le formulaire qui se trouve sur cette page. Nous nous assurerons de vous revenir dès que possible.</p><br>-->
+<div id="all_cont">
+    <form action="/Contactez-nous/envoie" id="form" method="POST"><br><br>
+        <input type="text" class="nom" name="nom" placeholder="Nom et prénom" required><br><br>
+        <input type="text" class="tele" name="tele" placeholder="votre numéro de téléphone" required><br><br>
+        <input type="text" class="email" name="email" placeholder="Votre E-mail" required><br><br>
+        <textarea name="msg" style="height: 40%;" class="msg" placeholder="Votre Message" required></textarea><br><br>
+        <button type="submit" class="btncont">Envoyer</button><br><br>
+    </form>
+</div><br><br> {% endblock content %}

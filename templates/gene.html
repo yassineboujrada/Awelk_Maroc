@@ -12,8 +12,8 @@
 <body>
     <div id="menu">
         <div class="head1">
-            <p class='titre'>Awelk</p>
             <img class='img-head' src="/static/images/logo.png">
+            <p class='titre'>Awelk</p>
         </div>
         <nav id="side">
             <a href="/" id="par" class="lien1">ACCUEIL</a>
@@ -24,22 +24,24 @@
     </div>
     {% block content %} {% endblock content %}
     <footer id="footer">
-        <div id="first_part_foter">
-            <h4 class="somme1" onclick="location='/Qui-Somme-Nous'">Awelk Maroc</h4>
-            <a href="/Qui-Somme-Nous" class="propos">A propos de Nous</a>
-            <a href="/Termes" class="cnd">Termes & Conditions</a>
+        <div id="first_part_foter"><br>
+            <h4 class="somme1" onclick="location='/Qui-Somme-Nous'">Awelk Maroc</h4><br>
+            <a href="/Qui-Somme-Nous" class="propos">A propos de Nous</a><br><br>
+            <a href="/Termes" class="cnd">Termes & Conditions</a><br><br>
             <h5 class="login_asadmin" onclick="location='/login'">login as administrator</h5>
         </div>
         <div id="second_part_foter">
-            <h4 class="somme1" style="position: relative;top: 25px;">Prendre Contact :</h4>
+            <h4 class="somme1" style="position: relative;top: 25px;">Prendre Contact :</h4><br><br>
+            <div class="first_content">
             <img src="/static/images/email.jpg" class="imgmail">
-            <p class="text_footer1">bou8027@gmail.com</p>
+            <p class="text_footer1">bou8027@gmail.com</p></div><br>
+            <div class="second_content">
             <img src="/static/images/p.jpg" class="imgwhat">
-            <p class="text_footer2">+212 6689-44952</p>
+            <p class="text_footer2">+212 6689-44952</p></div>
         </div>
     </footer>
     <div id="copy">&#169; AWELK MAROC</div>
-    <script src="{{url_for( 'static',filename='/annimtion/gene.js' )}} " async defer></script>
+    <script src="{{url_for('static',filename='/annimtion/gene.js')}} " async defer></script>
 </body>
 
 </html>

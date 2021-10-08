@@ -1,23 +1,18 @@
-{% extends "gene.html" %}
-{% block content %}<br><br><br><br>
+{% extends "gene.html" %} {% block content %}<br><br><br><br><br><br>
 <link rel="stylesheet" href="{{url_for('static',filename='/designe/admin.css')}}">
-        <!-- for login page  -->
-    {% with messages = get_flashed_messages(category_filter=["prob"]) %}
-        {% if messages %}
-        {% for msg in messages %}
-            <p class='error'>{{ msg }}</p>
-        {% endfor %}
-        {% endif %}
-    {% endwith %}
-    <div class ="login_body">
+<!-- for login page  -->
+{% with messages = get_flashed_messages(category_filter=["prob"]) %} {% if messages %} {% for msg in messages %}
+<p class='error'>{{ msg }}</p>
+{% endfor %} {% endif %} {% endwith %}<br>
+<div class="login_body">
     <div id="sous_body">
-        <img src="/static/images/admin.png" class="adm"><div class="wel">Welcome</div><br><br>
+        <img src="/static/images/admin.png" class="adm">
+        <div class="wel">Welcome</div><br><br>
         <form id="form_login" action="" method="POST"><br><br>
             <input type="email" name="user_admin" class="user_ad" placeholder="Nom d'utilisation" required><br><br>
             <input type="password" name="password_admin" class="password_ad" placeholder="Mot de passe" required><br><br>
-            <p class="for_pass" onclick="location='/forgot'">Oublié mon mot de passe</p>
+            <p class="for_pass" onclick="location='/forgot'">Oublié mon mot de passe</p><br>
             <Button type="submit" class="btn_pass">Login</button><br><br>
         </form>
     </div>
-    </div>
-{% endblock content %}
+</div><br><br> {% endblock content %}

@@ -8,7 +8,7 @@ var i = 1
 
 setInterval(function() {
     img.src = "/static/images/mvt/bord" + i + ".png";
-    img.setAttribute("style", "width:101.4%; height:15%; display:block;position:relative;left:-10px;")
+    img.setAttribute("style", "width:100%; height:35vw; display:block;")
     div.appendChild(img)
     i++
     if (i === lim) {

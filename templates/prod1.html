@@ -1,35 +1,33 @@
-{% extends "gene.html" %}
-{% block content %}
-    <link rel="stylesheet" href="{{url_for('static',filename='/designe/product.css')}}">
-    <br><br><br>
-    <img src="/static/images/detailproduct/awelk22.jpg" class="img-3"><br>
-    <img src="/static/images/what.jpg" id="imagewhat" onclick="location='https://api.whatsapp.com/send/?phone=%2B212608703533&text=Je+vous+contacte+à+propos+de+%28ARCTIC+HUNTER+SAC+A+DOS+MULTI-FONCTION%29&app_absent=0'">
-    <div  style="height: 700px; display:bloc;">
-        <form id="first" action="{{url_for("achat")}}" method='POST'>
-            <input type="button"class="detail11" name='product' name="prod1" value="BUSINESS SAC À DOS DE VOYAGE">
-            <p class="prix1">500.00 dh  Taxes incluses.</p>
-            <select name="color_sac" id="color-select">
+{% extends "gene.html" %} {% block content %}
+<link rel="stylesheet" href="{{url_for('static',filename='/designe/product.css')}}">
+<br><br><br>
+<img src="/static/images/detailproduct/awelk22.jpg" class="img-3"><br>
+<img src="/static/images/what.jpg" id="imagewhat" onclick="location='https://api.whatsapp.com/send/?phone=%2B212608703533&text=Je+vous+contacte+à+propos+de+%28ARCTIC+HUNTER+SAC+A+DOS+MULTI-FONCTION%29&app_absent=0'">
+<div class="des-dev2">
+    <form id="first" action="{{url_for('achat')}}" method='POST'>
+        <input type="button" class="detail11" name='product' name="prod1" value="BUSINESS SAC À DOS DE VOYAGE"><br><br><br>
+        <p class="prix1">500.00 dh Taxes incluses.</p><br><br>
+        <select name="color_sac" id="color-select">
                 <option value="">--Choisis votre color--</option>
                 <option value="noir">Color Noir</option>
                 <option value="marron">Color Marron</option>
                 <option value="gris">Color Gris</option>
-            </select>
-            <button type="submit" class="btnacc">Acheter maintenant</button>
-        </form>
-        <div id="second">
-            <p class="para1">Business Sac à dos de voyage  conçue pour suivre votre rythme au quotidien. Que ce soit pour vos déplacements quotidiens, votre travail, pour aller au sport ou pour un court voyage,
-            Business Sac à dos de voyage avec port de chargement USB externe , vous pouvez facilement charger des appareils électroniques tout en marchant. Veuillez noter que ce sac à dos ne comprend pas de puissance.</p>
-            <p class="para2">Multifonctionnel structure :</p><br>
-            <p class="para3">multi-couches de l'espace de stockage de grande capacité pour répondre à vos besoins quotidiens, adaptée pour ordinateurs portables 15,6 pouces, vous pouvez travailler et voyager sans problèmes.</p>
-            <p style="padding-left: 40px; color: rgb(150, 41, 41);font-family: Lucida Sans;">Dimensions:    </p><br>
-            <p class="para3">43*30*15 cm / Capacité:    20-35 litres / Poids:    0.57 k</p>
+            </select><br><br>
+        <button type="submit " class="btnacc">Acheter maintenant</button>
+    </form>
+    <div id="second">
+        <p class="para1">Business Sac à dos de voyage conçue pour suivre votre rythme au quotidien. Que ce soit pour vos déplacements quotidiens, votre travail, pour aller au sport ou pour un court voyage, Business Sac à dos de voyage avec port de chargement USB externe
+            , vous pouvez facilement charger des appareils électroniques tout en marchant. Veuillez noter que ce sac à dos ne comprend pas de puissance.</p>
+        <p class="para2">Multifonctionnel structure :</p><br>
+        <p class="para3">multi-couches de l'espace de stockage de grande capacité pour répondre à vos besoins quotidiens, adaptée pour ordinateurs portables 15,6 pouces, vous pouvez travailler et voyager sans problèmes.</p>
+        <p style="padding-left: 40px; color: rgb(150, 41, 41);font-family: Lucida Sans; ">Dimensions: </p><br>
+        <p class="para3">43*30*15 cm / Capacité: 20-35 litres / Poids: 0.57 k</p>
 
-        </div>
-    </div><br>
-    <img src="/static/images/detailproduct/awelk21.jpg" class="img-31">
-    <img src="/static/images/detailproduct/awelk23.jpg" class="img-32"><br>
-    <img src="/static/images/detailproduct/awelk24.jpg" class="img-33">
-    <img src="/static/images/detailproduct/awelk25.jpg" class="img-34"><br>
-    <img src="/static/images/detailproduct/awelk23.jpg" class="img-35"><br><br><br><br>
-    <button onclick="location='/nosproduit'" class="btnproduit">Page de produit</button><br>
-{% endblock content %}
+    </div>
+</div><br>
+<img src="/static/images/detailproduct/awelk21.jpg" class="img-31">
+<img src="/static/images/detailproduct/awelk23.jpg" class="img-32"><br>
+<img src="/static/images/detailproduct/awelk24.jpg" class="img-33">
+<img src="/static/images/detailproduct/awelk25.jpg" class="img-34"><br>
+<img src="/static/images/detailproduct/awelk23.jpg" class="img-35"><br><br><br><br>
+<button onclick="location='/nosproduit'" class="btnproduit">Page de produit</button><br><br> {% endblock content %}
