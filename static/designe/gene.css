@@ -286,74 +286,107 @@
 /*##################################  CE DESIGNE POUR DEVICES MOBILES #############################*/
 
 @media screen and (max-device-width: 500px) {
-    /* condition */
-    .title4 {
-        margin-left: -16%;
-        height: 100px;
-        font-size: 40px;
+    .def,.intro_awelk{font-size: 25px;}
+    .testt{height: 20%;}
+    .imgacc{width: 65%;}
+    .des-dev{
+        height: 70vw;
+        justify-content: start;
     }
-    .parag {
-        color: #302b63;
-    }
-    /* qui somme nous */
-    .titre2 {
-        margin-left: -12%;
-        height: 100px;
-        font-size: 40px;
-    }
-    .note {
-        text-align: left;
-        font-size: 12px;
-    }
-    .p-dv {
-        text-align: center;
-        color: #302b63;
-    }
-    /* qui contactez nous */
-    .title3 {
-        margin-left: -8%;
-        height: 100px;
-        font-size: 40px;
-    }
-    h5 {
-        color: brown;
-        text-decoration: underline;
-    }
-    .peti-para {
-        margin-left: -8%;
-    }
-    .nom,
-    .tele,
-    .email,
-    .msg {
-        padding-top: 2%;
-        text-align: center;
-        font-size: 16px;
-    }
-    .msg {
-        height: 20px;
-    }
-    /* nos produit */
-    #titlepro {
+    #first{
         font-size: 25px;
-        margin-left: -15%;
+        height: 65vw;
+        text-align: center;
     }
-    #search {
-        margin-top: 50px;
+    .detail11{margin-left: -6%;}
+    .prix1{margin-left: 22%;}
+    #first1{
+        height: 57vw;
+        width: 48vw;
     }
-    /* accueil */
-    .def {
-        margin-left: -10%;
+    /****           Nos Produit         ****/
+    .head_of_page{
+        height: 10vw;
+        text-align: center;
+        justify-content: space-around;
+        font-size: 45px;
     }
-    .intro_awelk {
-        margin-left: -6%;
+    #titlepro{
+        font-size: 25px;
+        margin-top: 2vw;}
+    .find{width: 44vw;}
+    #search,#btnsearch{
+        width: 21vw;
+        height: 4vw;
+        font-size: 20px;}
+    .textpro{
+        opacity: 1;
+        width: 25vw;
+        height: 44vw;
+        font-size: 20px;
     }
-    .imgacc {
-        width: 99%;
-        margin-left: -13px;
+    .imgpro{
+        width: 25vw;
+        height: 27vw;
     }
-    .decouvre {
-        margin-top: 20%;
-        margin-left: -65%;
+    .imgprod{
+        width: 24vw;
+        height: 32vw;
     }
+    .btnpro{
+        width: 17vw;
+        height: 5vw;
+        font-size: 17px;
+    }
+    #selectprod{height: 60vw;}
+    /***********        nous sommes    **************/
+    .p-dv,.parag{
+        font-size: 15px;
+        text-align: -webkit-center;
+        color: #00003d;
+        font-family: Century Gothic;
+    }
+    /***********        contactez nous    **************/
+    #all_cont{
+        height: 133vw;
+    }
+    h3{
+        font-size: 26px;
+    }
+    #form{
+        height: 73vw;
+        width: 70vw;
+        margin-top: 22vw;
+        font-size: 26px;
+    }
+    .nom,.tele,.email,.msg{
+        width: 45vw;
+        height: 5vw;
+        font-size: 20px;
+    }
+    .btncont{
+        width: 35vw;
+        height: 6vw;
+        font-size: 20px;
+    }
+    /***********        Administrateur    **************/
+    #sous_body{
+        height: 86vw;
+        width: 55vw;
+    }
+    .login_body{
+        height: 146vw;
+    }
+    .wel{font-size: 35px;}
+    #form_login{
+        height: 43vw;
+        font-size: 34px;
+    }
+    .user_ad,.password_ad{
+        width: 38vw;
+        height: 5vw;
+    }
+    .for_pass,.user_ad,.password_ad,.btn_pass{font-size: 20px;}
+    .btn_pass{width:28vw;
+    height: 5vw;}
 }

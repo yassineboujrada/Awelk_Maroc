@@ -15,6 +15,8 @@ from random import randint
 from flask_login.utils import logout_user
 from envoyer import send_email,buy,verif_msg
 import pandas as pd
+
+
 UPLOAD_FOLDER = 'static/images/product/'
 site=Flask(__name__)
 site.config['SECRET_KEY'] = '5791628bb0b13ce0c676dfde280ba245'
