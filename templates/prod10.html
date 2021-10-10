@@ -4,14 +4,14 @@
     <br><br><br>
     <img src="/static/images/detailproduct/awelk101.jpg" class="img-3"><br>
     <img src="/static/images/what.jpg" id="imagewhat" onclick="location='https://api.whatsapp.com/send/?phone=%2B212608703533&text=Je+vous+contacte+%C3%A0+propos+de+%28HEWLETT+BACKPACK%29&app_absent=0'">
-    <div  style="height: 700px; display:bloc;">
-        <form id="first" action="{{url_for("achat")}}" method='POST'>
-            <input type="button"class="detail1" name='product' value="HEWLETT BACKPACK">
-            <p class="prix1">449.00 dh  Taxes incluses.</p>
-            <input  name="color_sac" id="color-select" style="border:0px solid; color:white;" value="Noir">
-            <button type="submit" class="btnacc" style="margin-left:45%;">Acheter maintenant</button>
+    <div class="first_">
+        <form id="first" action="{{url_for('achat')}}" method='POST'><br><br>
+            <input type="button"class="detail1" name='product' value="HEWLETT BACKPACK"><br>
+            <p class="prix1">449.00 dh  Taxes incluses.</p><br>
+            <input  name="color_sac" id="color-select" style="border:0px solid; color:white;" value="Noir"><br>
+            <button type="submit" class="btnacc">Acheter maintenant</button>
         </form>
-        <div id="second">
+        <div id="second" class="second">
             <p class="para1">SI vous soyez dirigé vers une excursion en plein air, ce sac à dos rendra votre voyage un peu plus confortable. Il offre un espace de stockage dédié aux vêtements et aux équipements ou accessoires de sport.
             Ce sac à dos élégant n’est pas seulement beau mais offre également du confort. Sa conception aide à exercer une pression minimale sur vos épaules et votre dos.</p><br>    
         </div>
@@ -20,5 +20,5 @@
     <img src="/static/images/detailproduct/awelk103.jpg" class="img-32"><br>
     <img src="/static/images/detailproduct/awelk104.jpg" class="img-33">
     <img src="/static/images/detailproduct/awelk105.jpg" class="img-34"><br><br><br><br>
-    <button onclick="location='/nosproduit'" class="btnproduit">Page de produit</button><br>
+    <button onclick="location='/nosproduit'" class="btnproduit">Page de produit</button><br><br>
 {% endblock content %}

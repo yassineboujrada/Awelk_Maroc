@@ -14,13 +14,13 @@
     <div id="sous_body" class="post_login">
         <form action="" id="form_login" method="POST" enctype="multipart/form-data">
             <br><br>
-            <p class="info_mail">Bonjour de votre plateform pour ajouter les produits</p><br><br><br>
+            <p class="info_mail" style="font-size: 14px;">Bonjour de votre plateform pour ajouter les produits</p><br><br><br>
             <input type="file" id="img_file" name="img_file" autocomplete="off" required><br><br>
             <input type="text" id="title" class="user_ad" name="title_product" placeholder="Nom de produit" required><br><br>
             <input type="text" id="prix" name="price-product" class="user_ad" placeholder="Prix de produit" required><br><br>
             <button type="submit" class="btn_pass">POSTULER</button><br><br>
 
         </form><br>
-        <button onclick="location='/logout'" class="logout" class="btn_pass">Déconnecter</button><br><br>
+        <button onclick="location='/logout'" id="logout" class="btn_pass">Déconnecter</button><br><br>
     </div>
 </div><br><br> {% endblock content %}

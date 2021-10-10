@@ -4,14 +4,14 @@
     <br><br><br>
     <img src="/static/images/detailproduct/awelk51.jpg" class="img-3"><br>
     <img src="/static/images/what.jpg" id="imagewhat" onclick="location='https://api.whatsapp.com/send/?phone=%2B212608703533&text=Je+vous+contacte+%C3%A0+propos+de+%28DAX+TEENAGERS+ECOLE+BACKPACK%29&app_absent=0'">
-    <div  style="height: 700px; display:bloc;">
-        <form id="first" action="{{url_for("achat")}}" method='POST'>
-            <input type="button"class="detail11" name='product' value="DAX TEENAGERS ECOLE BACKPACK">
-            <p class="prix1">420.00 dh Taxes incluses.</p>
-            <input  name="color_sac" id="color-select" style="border:0px solid; color:white;" value="Noir">
-            <button type="submit" class="btnacc" style="margin-left:45%;">Acheter maintenant</button>
+    <div class="first_">
+        <form id="first" action="{{url_for('achat')}}" method='POST'><br><br>
+            <input type="button"class="detail11" name='product' value="DAX TEENAGERS ECOLE BACKPACK"><br>
+            <p class="prix1">420.00 dh Taxes incluses.</p><br>
+            <input  name="color_sac" id="color-select" style="border:0px solid; color:white;" value="Noir"><br>
+            <button type="submit" class="btnacc">Acheter maintenant</button>
         </form>
-        <div id="second">
+        <div id="second" class="second">
             <p class="para1">Le DAX TEENAGERS ECOLE BACKPACK convient à de nombreuses occasions.Unisex pour les hommes et les femmes.Vous pouvez le porter à l'école, au collège, à la randonnée, au shopping, au vélo, aux voyages, aux rencontres, etc.</p>
             <p class="para2">PRÊT POUR L'AVENTURE :</p><br>
             <p class="para3">Les tissus résistant à l'eau combinés à un revêtement à l'intérieur et sur les zips, permettent de garder vos affaires au sec durant vos escapades en extérieur.</p>
@@ -21,5 +21,5 @@
     <img src="/static/images/detailproduct/awelk53.jpg" class="img-32"><br>
     <img src="/static/images/detailproduct/awelk54.jpg" class="img-33">
     <img src="/static/images/detailproduct/awelk56.jpg" class="img-34"><br><br><br><br>
-    <button onclick="location='/nosproduit'" class="btnproduit">Page de produit</button><br>
+    <button onclick="location='/nosproduit'" class="btnproduit">Page de produit</button><br><br>
 {% endblock content %}

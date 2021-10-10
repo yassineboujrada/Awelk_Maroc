@@ -1,17 +1,18 @@
 {% extends "gene.html" %}
 {% block content %}
     <link rel="stylesheet" href="{{url_for('static',filename='/designe/product.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='/designe/gene.css')}}">
     <br><br><br>
     <img src="/static/images/detailproduct/awelk31.jpg" class="img-3"><br>
     <img src="/static/images/what.jpg" id="imagewhat" onclick="location='https://api.whatsapp.com/send/?phone=%2B212608703533&text=Je+vous+contacte+%C3%A0+propos+de+%28DAX+3D+THE+HUNTER+SAC+%C3%80+DOS%29&app_absent=0'">
-    <div  style="height: 700px; display:bloc;">
-        <form id="first" action="{{url_for("achat")}}" method='POST'>
-            <input type="button"class="detail1" name='product' value="DAX 3D THE HUNTER SAC À DOS">
-            <p class="prix1">549.00 dh Taxes incluses.</p>
-            <input  name="color_sac" id="color-select" style="border:0px solid; color:white;" value="Noir">
-            <button type="submit" class="btnacc" style="margin-left:45%;">Acheter maintenant</button>
+    <div class="first_">
+        <form id="first" action="{{url_for('achat')}}" method='POST' ><br><br>
+            <input type="button"class="detail1" name='product' value="DAX 3D THE HUNTER SAC À DOS"><br><br>
+            <p class="prix1">549.00 dh Taxes incluses.</p><br>
+            <input  name="color_sac" id="color-select" style="border:0px solid; color:white;" value="Noir"><br>
+            <button type="submit" class="btnacc">Acheter maintenant</button>
         </form>
-        <div id="second">
+        <div id="second"  class="second">
             <p class="para1">DAX 3D The Hunter Sac à Dos est conçu pour vous simplifier la vie en déplacement.
                 Avec la possibilité d'ouvrir complètement comme un bagage, vos vêtements,
                 livres et articles de voyage s'intègrent parfaitement à l'intérieur.
@@ -26,5 +27,5 @@
     <img src="/static/images/detailproduct/awelk33.jpg" class="img-32"><br>
     <img src="/static/images/detailproduct/awelk34.jpg" class="img-33">
     <img src="/static/images/detailproduct/awelk35.jpg" class="img-34"><br><br><br><br>
-    <button onclick="location='/nosproduit'" class="btnproduit">Page de produit</button><br>
+    <button onclick="location='/nosproduit'" class="btnproduit">Page de produit</button><br><br>
 {% endblock content %}

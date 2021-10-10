@@ -3,25 +3,26 @@
 <br><br><br>
 <img src="/static/images/detailproduct/awelk11.jpg" class="img-3"><br>
 <img src="/static/images/what.jpg" id="imagewhat" onclick="location='https://api.whatsapp.com/send/?phone=%2B212608703533&text=Je+vous+contacte+%C3%A0+propos+de+%28ARCTIC+HUNTER+SAC+A+DOS+MULTI-FONCTION%29&app_absent=0'">
-<div style="height: 700px; display:bloc;">
-    <form id="first" action="{{url_for('achat')}} " method='POST'>
-        <input type="button " class="detail11 " name='product' value="ARCTIC HUNTER SAC A DOS MULTI-FONCTION ">
-        <p class="prix1 ">500.00 dh Taxes incluses.</p>
-        <select name="color_sac " id="color-select ">
-                <option value=" ">--Choisis votre color--</option>
-                <option value="noir ">Color Noir</option>
-                <option value="marron ">Color Marron</option>
-            </select>
-        <button type="submit " class="btnacc ">Acheter maintenant</button>
+<div class="first_">
+    <form id="first" action="{{url_for('achat')}}" method='POST'><br><br>
+        <input type="button" class="detail11" name='product' value="ARCTIC HUNTER SAC A DOS MULTI-FONCTION"><br>
+        <p class="prix1">500.00 dh Taxes incluses.</p><br>
+        <select name="color_sac" id="color-select">
+                <option value="Noir">--Choisis votre color--</option>
+                <option value="noir">Color Noir</option>
+                <option value="marron">Color Marron</option>
+            </select><br><br>
+        <button type="submit" class="btnacc">Acheter maintenant</button>
     </form>
-    <div id="second ">
-        <p class="para1 ">Arctic Hunter Sac à dos conçue pour suivre votre rythme au quotidien. Que ce soit pour vos déplacements quotidiens, votre travail, pour aller au sport ou pour un court voyage.</p>
-        <p class="para2 ">Multifonctionnel structure :</p><br>
-        <p class="para3 ">Arctic Hunter Sac à dos multi-couches de l'espace de stockage de grande capacité pour répondre à vos besoins quotidiens, adaptée pour ordinateurs portables 15,6 pouces, vous pouvez travailler et voyager sans problèmes.</p>
+    <div id="second" class="second">
+        <p class="para1">Arctic Hunter Sac à dos conçue pour suivre votre rythme au quotidien. Que ce soit pour vos déplacements quotidiens, votre travail, pour aller au sport ou pour un court voyage.</p>
+        <p class="para2">Multifonctionnel structure :</p><br>
+        <p class="para3">Arctic Hunter Sac à dos multi-couches de l'espace de stockage de grande capacité pour répondre à vos besoins quotidiens, adaptée pour ordinateurs portables 15,6 pouces, vous pouvez travailler et voyager sans problèmes.</p>
     </div>
 </div><br>
-<img src="/static/images/detailproduct/awelk12.jpg " class="img-31 ">
-<img src="/static/images/detailproduct/awelk13.jpg " class="img-32 "><br>
-<img src="/static/images/detailproduct/awelk14.jpg " class="img-33 ">
-<img src="/static/images/detailproduct/awelk15.jpg " class="img-34 "><br><br><br><br>
-<button onclick="location='/nosproduit' " class="btnproduit ">Page de produit</button><br> {% endblock content %}
+<img src="/static/images/detailproduct/awelk12.jpg" class="img-31">
+<img src="/static/images/detailproduct/awelk13.jpg" class="img-32"><br>
+<img src="/static/images/detailproduct/awelk14.jpg" class="img-33">
+<img src="/static/images/detailproduct/awelk15.jpg" class="img-34"><br><br><br><br>
+<button onclick="location='/nosproduit'" class="btnproduit">Page de produit</button><br><br> 
+{% endblock content %}

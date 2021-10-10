@@ -1,5 +1,34 @@
 /*######################## partie de head ########################*/
+.success {
+    color: green;
+    font-family: 25px;
+    visibility: visible;
+    animation: move 5s;
+    -webkit-animation: move 5s infinite;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    text-align: center;
+}
+@-webkit-keyframes move
+/* Safari and Chrome */
 
+{
+    0% {
+        opacity: 1;
+    }
+    15% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    75% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 #menu {
     width: 100%;
     height: 75px;
@@ -397,16 +426,7 @@
         font-size: 20px;
     }
     .error,.success,.problem{margin-top: 5vw;font-size: 29px;}
-    /*.logout{margin-top: 20vw;
-        color: #fff;
-        width: 28vw;
-        height: 52px;
-        border: solid rgb(89, 23, 150);
-        border-radius: 25px;
-        background-color: rgb(89, 23, 150);
-        font-size: 20px;
-    }*/
-    .btn_pass{
+    #logout{
         margin-top: 5vw;
     }
     .info_mail{
@@ -415,4 +435,16 @@
     #img_file{
         font-size: 20px;
     }
+    /************  header  ************/
+    #menu{
+        height: 9vw;
+        font-size: 14px;
+        justify-content: center;
+    }
+    /************  footer  ************/
+    #footer{
+        height: 30vw;
+        font-size: 27px;
+    }
+    #copy{height: 9vw;font-size: 27px;}
 }

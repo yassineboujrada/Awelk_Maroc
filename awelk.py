@@ -102,14 +102,14 @@ def post():
         f=request.files["img_file"]
         path = os.path.join(site.config['UPLOAD_FOLDER'], f.filename)
         print(allowed_file(f.filename))
-        db.session.add(Img(name='static/images/product/'+f.filename,title=session['titre'],prix=session["prix"]))
-        db.session.commit()
-        f.save(path)
         if allowed_file(f.filename):
             try:
                 x=int(session["prix"])
                 if isinstance(x, int):
                     flash("votre post est creer","success")
+                    db.session.add(Img(name='static/images/product/'+f.filename,title=session['titre'],prix=session["prix"]))
+                    db.session.commit()
+                    f.save(path)
                     return redirect(url_for("post"))
             except ValueError:
                 flash("tu est donnees un caractere dans prix","problem")
